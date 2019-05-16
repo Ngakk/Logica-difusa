@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class SliderReference : MonoBehaviour
 {
-    public Slider input1, input2, output1, output2, output3;
+    public Slider input1, input2, agua, jabon, tiempo;
 
     public float maxWeight, maxDirt, maxWater, maxTime, maxSoap;
 
@@ -13,8 +13,15 @@ public class SliderReference : MonoBehaviour
     {
         input1.maxValue = maxWeight;
         input2.maxValue = maxDirt;
-        output1.maxValue = maxWater;
-        output2.maxValue = maxTime;
-        output3.maxValue = maxSoap;
+        agua.maxValue = maxWater;
+        tiempo.maxValue = maxTime;
+        jabon.maxValue = maxSoap;
+    }
+
+    public void UpdateOutput(float _time, float _soap, float _water)
+    {
+        agua.value = _water;
+        tiempo.value = _time;
+        jabon.value = _soap;
     }
 }

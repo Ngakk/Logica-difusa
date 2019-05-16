@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657886, g: 0.4964127, b: 0.57481724, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1603,14 +1603,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   input1: {fileID: 595279514}
   input2: {fileID: 1293236626}
-  output1: {fileID: 2133462005}
-  output2: {fileID: 193216572}
-  output3: {fileID: 1774782335}
+  agua: {fileID: 193216572}
+  jabon: {fileID: 1774782335}
+  tiempo: {fileID: 2133462005}
   maxWeight: 10
   maxDirt: 1
   maxWater: 15
   maxTime: 50
-  maxSoap: 6
+  maxSoap: 300
 --- !u!114 &1326071523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2708,7 +2708,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c61fd0916bfcf64393a2cd68a9aaca7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sliderReference: {fileID: 0}
+  sliderReference: {fileID: 1326071522}
+  veryLight: 0
+  light: 0
+  normal: 0
+  heavy: 0
+  veryHeavy: 0
+  clean: 0
+  kindaDirty: 0
+  dirty: 0
+  nasty: 0
+  littleTime: 0
+  someTime: 0
+  fullTime: 0
+  littleWater: 0
+  normalWater: 0
+  muchWater: 0
+  littleSoap: 0
+  someSoap: 0
+  muchSoap: 0
 --- !u!4 &1939501897
 Transform:
   m_ObjectHideFlags: 0
